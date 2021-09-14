@@ -1,0 +1,123 @@
+footer {
+    position: relative;
+    padding:3.125rem 0;
+    background:url(../images/banner/slider-01.jpg);
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    overflow: hidden;
+
+    &::before{
+        position: absolute;
+        content:"";
+        width:100%;
+        height:100%;
+        left:0;
+        top:0;
+        background:rgba(0,0,0,0.7);
+        z-index:0;
+    }
+
+    @media screen and(max-width:767.98px) {
+        padding: 20px 0 0;
+    }
+
+    .copy-right {
+        padding: 2.5rem 0 0;
+        border-top: solid 1px #dfdfdf;
+        font-size: 12px;
+        color:$color-primary;
+        text-align: center;
+        position: relative;
+        z-index:2;
+
+        .copy-right-card{
+            p{
+                font-size:.9375rem;
+                color:$color-primary;
+
+                a{
+                    margin:0 .3125rem;
+                    color:$icons-color;
+                    text-transform:uppercase;
+                    font-weight:bold;
+                }
+            }
+        }
+        // @include shado-1();
+    }
+
+    .footer-content {
+        margin: 20px 0px;
+        display: block;
+        width: 100%;
+        color:$color-primary;
+
+        p {
+            font-size: 16px;
+            padding: 10px 0px;
+            line-height: 27px;
+            margin: 0px;
+        }
+
+        ul {
+            li {
+                display: inline-block;
+                height: 30px;
+                width: 30px;
+                background: $icons-color;
+                color: $color-primary;
+                line-height: 30px;
+                text-align: center;
+                border-radius: 3px;
+                margin: 5px 3px 0px 0px;
+            }
+        }
+
+        ol {
+            li {
+                padding: 10px 0px;
+                position: relative;
+
+                a {
+                    color:$color-primary;
+                    font-size: 16px;
+
+                    i {
+                        padding-right: 10px;
+                    }
+                }
+            }
+        }
+
+        h2 {
+            font-size: 20px;
+            position: relative;
+            color:$color-primary;
+            padding: 5px 0px;
+            font-weight: 600;
+        }
+
+        .form-group {
+            position: relative;
+
+            .form-control {
+                height: 40px;
+                padding-right: 40px;
+                text-overflow: ellipsis;
+            }
+
+            i {
+                position: absolute;
+                height: 40px;
+                width: 40px;
+                line-height: 40px;
+                color: $color-primary;
+                background: $icons-color;
+                text-align: center;
+                top: 0;
+                right: 0;
+            }
+        }
+    }
+}
